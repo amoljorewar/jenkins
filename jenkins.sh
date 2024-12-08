@@ -5,8 +5,6 @@ tomcat_process=`ps -ef | grep -i tomcat | wc -l`
 java_package=`rpm -qa | grep -i java | wc -l`
 jenkins_initial_pwd=`cat /root/.jenkins/secrets/initialAdminPassword`
 
- 
-
 echo "==============================================="
 echo "**********Initializing Jenkins setup***********"
 echo "==============================================="
