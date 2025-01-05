@@ -23,7 +23,7 @@ else
    echo "========================================"
 fi
 
-if [ -e ~/apache-tomcat-10.1.33 ]
+if [ -f ~/apache-tomcat-10.1.33 ]
 then
    echo "========================================"
    echo "*****Apache tomcat already exists*******"
@@ -38,7 +38,7 @@ else
    echo "======================================================="   
    tar -xzf apache-tomcat-10.1.33.tar.gz >/dev/null;rm -rf apache-tomcat-10.1.33.tar.gz;chmod -R 755 apache-tomcat-10.1.33
 fi
-if [ -e ~/apache-tomcat-10.1.33/webapps/jenkins.war ]
+if [ -f ~/apache-tomcat-10.1.33/webapps/jenkins.war ]
 then
    echo "========================================"
    echo "******jenkins.war already exists********"
